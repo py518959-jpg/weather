@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #121314;
+}
+
+/* 온도에 따라서 색 바뀜 */
+header {
+    width: 100vw;
+    height: 50px;
+    background-color: #f56464;
+}
+
+.main_header {
+    width: 1920px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    transform: translate(-50%);
+    left: 50%;
+    position: absolute;
+    top: 0;
+    line-height: 50px;
+}
+
+.logo>a>img {
+    width: 100px;
+    height: 50px;
+    display: block;
+}
+
+.nav {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 400px;
+}
+
+.nav>ul {
+    display: flex;
+}
+
+.nav>ul>li>a {
+    width: 100px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/* 날씨에 따라서 그림 바뀜 */
+.degree {
+    width: 100vw;
+    height: 800px;
+    background-color: #9a9a9a;
+}
+
+.img {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img>.cloudy.on {
+    display: block;
+}
+
+.img>.sunny.on {
+    display: block;
+}
+
+.img>.ranny.on {
+    display: block;
+}
+
+.img>.thunder.on {
+    display: block;
+}
+
+.sunny,
+.cloudy,
+.ranny,
+.thunder {
+    position: absolute;
+    display: none;
+}
+
+.lifetip {
+    width: 100vw;
+    height: 300px;
+    background-color: #bfbfbf;
+}
