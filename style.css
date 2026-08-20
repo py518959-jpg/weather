@@ -103,6 +103,57 @@ input {
     z-index: 1;
 }
 
+.temperature {
+    width: 800px;
+    height: 500px;
+    transform: translate(-50%);
+    background-color: red;
+    position: absolute;
+    top: 325px;
+    left: 50%;
+}
+
+.temperature>p {
+    width: 500px;
+    height: 150px;
+    font-size: 100px;
+    font-weight: 800;
+    background-color: #9a9a9a;
+    display: block;
+    line-height: 150px;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%);
+    top: 10%;
+    left: 50%;
+}
+.temperature_s {
+    width: 200px;
+    height: 150px;
+    /* background-color: orange; */
+    font-size: 130px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
+    transform: translate(-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.wrap_t>.c {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    /* background-color: pink; */
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    transform: translate(-50%);
+    top: 62%;
+    left: 64%;
+}
 
 .cloudy.on,
 .sunny.on,
