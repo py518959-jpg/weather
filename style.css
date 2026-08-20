@@ -43,8 +43,10 @@ header {
 
 .navbox {
     margin: 0 auto;
-    width: 1920;
+    width: 1920px;
     height: 50px;
+    position: relative;
+    z-index: 10;
 }
 
 .navbox:hover {
@@ -53,10 +55,6 @@ header {
     background-color: #9a9a9aa2;
     backdrop-filter: blur(5px);
     z-index: 10;
-}
-
-.nav {
-    z-index: 7;
 }
 
 .nav>ul {
@@ -102,7 +100,7 @@ input {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: blue;
-    z-index: 5;
+    z-index: 1;
 }
 
 
