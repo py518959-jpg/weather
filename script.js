@@ -52,3 +52,17 @@ let temperature = document.querySelector(".temperature_s");
 t_input.addEventListener("input", () => {
     temperature.textContent = t_input.value;
 })
+
+
+let h_t = document.querySelector(".h_t");
+let l_t = document.querySelector(".l_t");
+let h_input = document.querySelector(".h_input");
+let l_input = document.querySelector(".l_input");
+
+h_input.addEventListener("input", () => {
+    h_t.textContent = h_input.value;
+});
+
+l_input.addEventListener("input", () => {
+    l_t.textContent = l_input.value;
+});
