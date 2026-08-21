@@ -1,60 +1,61 @@
 <!doctype html>
 <html lang="ko">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather_Web</title>
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <section class="main_header">
-        <section class="logo">
-          <a href="#"><img src="img/logo.png" alt="logo" /></a>
+        <section class="main_header">
+            <section class="logo">
+                <a href="#"><img src="img/logo.png" alt="logo" /></a>
+            </section>
+            <div class="navbox">
+                <section class="nav">
+                    <ul>
+                        <li><a href="#">지역</a></li>
+                        <li><a href="#">미세먼지</a></li>
+                        <li><a href="#">메뉴3</a></li>
+                        <li><a href="#">메뉴4</a></li>
+                    </ul>
+                </section>
+            </div>
         </section>
-        <div class="navbox">
-          <section class="nav">
-            <ul>
-              <li><a href="#">지역</a></li>
-              <li><a href="#">미세먼지</a></li>
-              <li><a href="#">메뉴3</a></li>
-              <li><a href="#">메뉴4</a></li>
-            </ul>
-          </section>
-        </div>
-      </section>
     </header>
-    <div class="main_degree">
-      <section class="degree">
-        <input class="w_input" type="text" value="" />
-        <input class="t_input" type="text" value="" />
-        <input class="h_input" type="text" value="" />
-        <input class="l_input" type="text" value="" />
-        <section class="img">
-          <img class="cloudy" src="img/cloudy.png" alt="흐림" />
-          <img class="sunny" src="img/suuny.png" alt="맑음" />
-          <img class="rainy" src="img/rainy.png" alt="강우" />
-          <img class="thunder" src="img/thunder.png" alt="뇌우" />
-          <img class="snowy" src="img/snowy.png" alt="눈" />
-          <img class="hamburger" src="img/bigmac.png" alt="햄버거" />
-          <img class="middlefinger" src="img/middlefinger.png" alt="중지" />
-          <img class="hhj" src="img/hhj.JPG" alt="한형준" />
+    <div class="main_weather">
+        <section class="weather">
+            <input class="w_input" type="text" value="" placeholder="weather" /><br><br>
+            <input class="t_input" type="text" value="" placeholder="온도" /><br><br>
+            <input class="h_input" type="text" value="" placeholder="최고온도" /><br><br>
+            <input class="l_input" type="text" value="" placeholder="최저온도" />
+            <section class="img">
+                <img class="cloudy" src="img/cloudy.png" alt="흐림" />
+                <img class="sunny" src="img/suuny.png" alt="맑음" />
+                <img class="rainy" src="img/rainy.png" alt="강우" />
+                <img class="thunder" src="img/thunder.png" alt="뇌우" />
+                <img class="snowy" src="img/snowy.png" alt="눈" />
+                <img class="hamburger" src="img/bigmac.png" alt="햄버거" />
+                <img class="middlefinger" src="img/middlefinger.png" alt="중지" />
+                <img class="hhj" src="img/hhj.JPG" alt="한형준" />
+            </section>
+            <section class="degree">
+                <p>여기 온도</p>
+                <p class="mtp"><span class="mts"></span>℃</p>
+                <div class="sub_degree">
+                    <p class="htp"><span class="hts"></span>℃</p>
+                    <p class="ltp"><span class="lts"></span>℃</p>
+                </div>
+            </section>
         </section>
-        <section class="temperature">
-          <p>현재 온도</p>
-          <div class="wrap_t">
-            <p class="temperature_s"></p>
-            <p class="c">℃</p>
-            <p class="h_t"></p>
-            <p class="l_t"></p>
-          </div>
-        </section>
-      </section>
     </div>
     <section class="lifetip"></section>
     <footer></footer>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
