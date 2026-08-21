@@ -41,28 +41,30 @@ w_input.addEventListener("input", () => {
     else if (w_input.value == "중지") {
         middlefinger.classList.add("on");
     }
-    else if (w_input.value == "한형준" || w_input.value == "형준" || w_input.value == "멍청이") {
+    else if (w_input.value == "한형준" || w_input.value == "형준" || w_input.value == "마피아42") {
         hhj.classList.add("on");
     }
 });
 
+let mtp = document.querySelector(".mtp");
+let htp = document.querySelector(".htp");
+let ltp = document.querySelector(".ltp");
+let mts = document.querySelector(".mts");
+let hts = document.querySelector(".hts");
+let lts = document.querySelector(".lts");
 let t_input = document.querySelector(".t_input");
-let temperature = document.querySelector(".temperature_s");
-
-t_input.addEventListener("input", () => {
-    temperature.textContent = t_input.value;
-})
-
-
-let h_t = document.querySelector(".h_t");
-let l_t = document.querySelector(".l_t");
 let h_input = document.querySelector(".h_input");
 let l_input = document.querySelector(".l_input");
 
+
+t_input.addEventListener("input", () => {
+    mts.textContent = t_input.value;
+});
+
 h_input.addEventListener("input", () => {
-    h_t.textContent = h_input.value;
+    hts.textContent = h_input.value;
 });
 
 l_input.addEventListener("input", () => {
-    l_t.textContent = l_input.value;
+    lts.textContent = l_input.value;
 });
